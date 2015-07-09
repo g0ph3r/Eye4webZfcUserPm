@@ -49,6 +49,9 @@ class NewMessageForm extends Form implements InputFilterProviderInterface
             ],
             'options' => [
                 'label' => 'Send',
+                'label_options' => [
+                    'disable_html_escape' => true,
+                ],
             ],
             ]
         );
