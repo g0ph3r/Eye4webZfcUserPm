@@ -14,7 +14,7 @@ class ModuleOptions extends AbstractOptions implements ModuleOptionsInterface
 
     protected $pmMapper = 'Eye4web\ZfcUser\Pm\Mapper\DoctrineORM\PmMapper';
 
-    protected $messageSortOrder = 'DESC';
+    protected $messageSortOrder = 'ASC';
 
     protected $messagesPerPage = 50;
 
