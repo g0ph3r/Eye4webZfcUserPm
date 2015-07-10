@@ -43,7 +43,7 @@ return [
 
     /**
      * Sort order when reading a conversation
-     * Default: DESC (newest in top)
+     * Default: ASC (newest in bottom)
      */
     //'messageSortOrder' => 'DESC',
 
