@@ -21,7 +21,7 @@ namespace Eye4web\ZfcUser\Pm\Mapper;
 use Eye4web\ZfcUser\Pm\Entity\ConversationInterface;
 use Eye4web\ZfcUser\Pm\Entity\ConversationReceiverInterface;
 use Eye4web\ZfcUser\Pm\Entity\MessageInterface;
-use ZfcUser\Entity\UserInterface;
+use ZfcUserMod\Entity\UserInterface;
 
 interface PmMapperInterface
 {
