@@ -22,7 +22,7 @@ use Eye4web\ZfcUser\Pm\Entity\ConversationInterface;
 use Eye4web\ZfcUser\Pm\Entity\MessageInterface;
 use Eye4web\ZfcUser\Pm\Service\PmServiceInterface;
 use Zend\View\Helper\AbstractHelper;
-use ZfcUser\Entity\UserInterface;
+use ZfcUserMod\Entity\UserInterface;
 use ZfcUser\Mapper\UserInterface as ZfcUserMapperInterface;
 
 class ZfcUserPmHelper extends AbstractHelper
