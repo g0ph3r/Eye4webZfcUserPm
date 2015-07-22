@@ -24,7 +24,7 @@ use Eye4web\ZfcUser\Pm\Entity\ConversationReceiverInterface;
 use Eye4web\ZfcUser\Pm\Mapper\PmMapperInterface;
 use Eye4web\ZfcUser\Pm\Entity\MessageInterface;
 use Eye4web\ZfcUser\Pm\Options\ModuleOptionsInterface;
-use ZfcUser\Entity\UserInterface;
+use ZfcUserMod\Entity\UserInterface;
 use ZfcUser\Options\ModuleOptions as ZfcUserModuleOptions;
 use Zend\EventManager\EventManagerAwareInterface;
 use Zend\EventManager\EventManagerAwareTrait;
