@@ -155,15 +155,17 @@ class PmService implements PmServiceInterface, EventManagerAwareInterface
      */
     public function getUsers()
     {
-        $displayName = $user->getEmail();
-        if(null !== $user->getPerson())
-            if($user->getPerson()->getPrename() != "" && $user->getPerson()->getName() != "")
-                $displayName = $user->getPerson()->getPrename()." ".$user->getPerson()->getName();
+        
         $dbUsers = $this->pmMapper->getUsers();
         $users = [];
         foreach ($dbUsers as $user) {
+            $displayName = $user->getEmail();
+            if(null !== $user->getPerson())
+                if($user->getPerson()->getPrename() != "" && $user->getPerson()->getName() != "")
+                    $displayName = $user->getPerson()->getPrename()." ".$user->getPerson()->getName();
             $users[] = [
-                'id' => $displayName,
+                'id' => $user->getId(),
+                'text' => $displayName(),
             ];
         }
 
