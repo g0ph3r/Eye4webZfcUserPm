@@ -165,7 +165,7 @@ class PmService implements PmServiceInterface, EventManagerAwareInterface
                     $displayName = $user->getPerson()->getPrename()." ".$user->getPerson()->getName();
             $users[] = [
                 'id' => $user->getId(),
-                'text' => $displayName(),
+                'text' => $displayName,
             ];
         }
 
